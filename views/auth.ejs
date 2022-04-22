@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebOffice-Login</title>
+    <!-- Icons  -->
+    <script src="https://kit.fontawesome.com/49134e791d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/login.css">
+
+</head>
+
+<body>
+    <h1>WebOffice Login/signup</h1>
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form action="/login" method="POST" id="signin_form" onsubmit="Validatesignin(event);" name="signin_form">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="facebook"><i class="fa fa-facebook-official"></i></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus-official"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <span>or use your account</span>
+                <div style="width: 100%;">
+                    <input name="email" type="email" placeholder="Email" />
+                    <div class="null_err">
+                        <span> <i class="fa-solid fa-circle-exclamation"></i>Email is required</span>
+                    </div>
+                </div>
+                <div style="width: 100%;">
+                    <input name="password" type="password" placeholder="Password" />
+                    <div class="null_err">
+                        <span> <i class="fa-solid fa-circle-exclamation"></i>Password is required</span>
+                    </div>
+                </div>
+                <a href="#">Forgot your password?</a>
+                <button id="login" type="submit">Log in</button>
+            </form>
+        </div>
+        <div class="form-container sign-up-container">
+            <form action="/auth" method="POST" id="signup_form" onsubmit="Validatesignup(event);" name="signup_form">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="facebook"><i class="fa fa-facebook-official"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus-official"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <div style="width: 100%;">
+                    <input id="fname" type="text" name="name" placeholder="Name" />
+                    <div class="null_err">
+                        <span> <i class="fa-solid fa-circle-exclamation"></i>name is required</span>
+                    </div>
+                </div>
+                <div style="width: 100%;">
+                    <input type="email" name="email" placeholder="Email" />
+                    <div class="null_err">
+                        <span> <i class="fa-solid fa-circle-exclamation"></i>Email is required</span>
+                    </div>
+                </div>
+                <div style="width: 100%;">
+                    <input type="password" name="password" placeholder="Password" />
+                    <div class="null_err">
+                        <span> <i class="fa-solid fa-circle-exclamation"></i>Password is required</span>
+                    </div>
+                </div>
+
+                <button style="margin-top: 10px;" type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Create account</h1>
+                    <p>Not a member yet!! Register here now.</p>
+                    <button id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="/assets/login.js"></script>
+</body>
+
+</html>

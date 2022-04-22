@@ -1,0 +1,76 @@
+.form-focus {
+    height: 50px;
+    position: relative;
+}
+.cal-icon {
+    position: relative;
+    width: 100%;
+}
+.form-focus .form-control {
+    height: 50px;
+    padding: 21px 12px 6px;
+}
+input, input:focus, button, button:focus {
+    outline: none;
+}
+.form-focus .focused .focus-label, label {
+    opacity: 1;
+    font-weight: 300;
+    /* top: 14px; */
+    font-size: 100px;
+    z-index: 1;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+select,
+label {
+    margin: .4rem 0;
+}
+.btn {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.table-responsive {
+    white-space: nowrap;
+    width: 100%;
+}
+
+.table {
+    color: #333;
+}
+.custom-table tr {
+    background-color: #fff;
+    box-shadow: 0 0 3px #e5e5e5;
+}
+.table thead th {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.stats-info {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.stats-info h6 {
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.stats-info h4 {
+    font-size: 24px;
+    margin-bottom: 0;
+}

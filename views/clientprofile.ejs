@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients Profile-WebOffice</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Ubuntu:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons  -->
+    <script src="https://kit.fontawesome.com/49134e791d.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- External css  -->
+    <link rel="stylesheet" href="/assets/dashboard_template.css">
+    <link rel="stylesheet" href="/assets/clients_profile.css">
+</head>
+
+<body>
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header">
+
+            <!-- Logo -->
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="/Images/review3.png" width="40" height="40" alt="">
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <a id="toggle_btn" href="javascript:void(0);">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- Header Title -->
+            <div class="page-title-box">
+                <h3>WebOffice</h3>
+            </div>
+            <!-- /Header Title -->
+
+            <!-- Header Menu -->
+            <ul class="nav user-menu">
+
+                <!-- Search -->
+                <li class="nav-item">
+                    <div class="top-nav-search">
+                        <form action="search.html">
+                            <input class="form-control" type="text" placeholder="Search here">
+                            <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </li>
+                <!-- /Search -->
+
+                <!-- Notifications -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i> <span class="badge badge-pill">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Notifications</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="/assets/img/profiles/avatar-02.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">John Doe</span> added
+                                                    new task <span class="noti-title">Patient appointment booking</span>
+                                                </p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="/assets/img/profiles/avatar-03.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Tarah Shropshire</span>
+                                                    changed the task name <span class="noti-title">Appointment booking
+                                                        with payment gateway</span></p>
+                                                <p class="noti-time"><span class="notification-time">6 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="/assets/img/profiles/avatar-06.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Misty Tison</span>
+                                                    added <span class="noti-title">Domenic Houston</span> and <span
+                                                        class="noti-title">Claire Mapes</span> to project <span
+                                                        class="noti-title">Doctor available module</span></p>
+                                                <p class="noti-time"><span class="notification-time">8 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="/assets/img/profiles/avatar-17.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Rolland Webber</span>
+                                                    completed task <span class="noti-title">Patient and Doctor video
+                                                        conferencing</span></p>
+                                                <p class="noti-time"><span class="notification-time">12 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="/assets/img/profiles/avatar-13.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bernardo Galaviz</span>
+                                                    added new task <span class="noti-title">Private chat module</span>
+                                                </p>
+                                                <p class="noti-time"><span class="notification-time">2 days ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- /Notifications -->
+
+                <!-- Message Notifications -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-comment-o"></i> <span class="badge badge-pill">8</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Messages</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="/assets/img/profiles/avatar-09.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Richard Miles </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="/assets/img/profiles/avatar-02.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">John Doe</span>
+                                                <span class="message-time">6 Mar</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="/assets/img/profiles/avatar-03.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Tarah Shropshire </span>
+                                                <span class="message-time">5 Mar</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="/assets/img/profiles/avatar-05.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Mike Litorus</span>
+                                                <span class="message-time">3 Mar</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="/assets/img/profiles/avatar-08.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Catherine Manseau </span>
+                                                <span class="message-time">27 Feb</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="chat.html">View all Messages</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- /Message Notifications -->
+
+                <li class="nav-item dropdown has-arrow main-drop">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <span class="user-img"><img src="/Images/review3.png" alt="">
+                            <span class="status online"></span></span>
+                        <span>Admin</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/employeeprofile">My Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="/login">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- /Header Menu -->
+
+        </div>
+        <!-- /Header -->
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/dashboard">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/employee">
+                        <span class="icon">
+                            <i class="fa-solid fa-users"></i>
+                        </span>
+                        <span class="title">Employees</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/projects">
+                        <span class="icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </span>
+                        <span class="title">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/attendance">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="title">Attendance</span>
+                    </a>
+                </li>
+                <li>
+                <li>
+                    <a href="/clients">
+                        <span class="icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </span>
+                        <span class="title">Clients</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/leaves">
+                        <span class="icon">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        <span class="title">Leaves</span>
+                    </a>
+                </li>
+
+                <li class="active-btn">
+                    <a href="/clientprofile">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span class="title">Clients profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/settings">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="page-title">Profile</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Profile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Page Header -->
+
+                <!-- Main html code goes here  -->
+                <div class="card mb-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="profile-view">
+                                    <div class="profile-img-wrap">
+                                        <div class="profile-img">
+                                            <a href="">
+                                                <img src="/Images/review3.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="profile-basic">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="profile-info-left">
+                                                    <h3 class="user-name m-t-0">Global Technologies</h3>
+                                                    <h5 class="company-role m-t-0 mb-0">Vaibhav</h5>
+                                                    <small class="text-muted">CEO</small>
+                                                    <div class="staff-id">Employee ID : CLT-0001</div>
+                                                    <!-- <div class="staff-msg"><a href="chat.html"
+                                                            class="btn btn-custom">Send Message</a>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <ul class="personal-info">
+                                                    <li>
+                                                        <span class="title">Phone:</span>
+                                                        <span class="text"><a href="">9876543210</a></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title">Email:</span>
+                                                        <span class="text"><a href="">vaibhavd@example.com</a></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title">Birthday:</span>
+                                                        <span class="text">2nd August</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title">Address:</span>
+                                                        <span class="text">Sri city, A.P</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title">Gender:</span>
+                                                        <span class="text">Male</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card tab-box">
+                    <div class="row user-tabs">
+                        <div class="col-lg-12 col-md-12 col-sm-12 line-tabs">
+                            <ul class="nav nav-tabs nav-tabs-bottom">
+                                <li class="nav-item col-sm-3"><a class="nav-link active" data-bs-toggle="tab"
+                                        href="#myprojects">Projects</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tab-content profile-tab-content">
+
+                            <!-- Projects Tab -->
+                            <div id="myprojects" class="tab-pane fade show active">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="dropdown profile-action">
+                                                    <a href="#" class="action-icon dropdown-toggle"
+                                                        data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                            class="fa-solid fa-ellipsis-vertical"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-target="#edit_project"><i
+                                                                class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-target="#delete_project"><i
+                                                                class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                    </div>
+                                                </div>
+                                                <h4 class="project-title"><a href="project-view.html">Office
+                                                        Management</a></h4>
+                                                <small class="block text-ellipsis m-b-15">
+                                                    <span class="text-xs">1</span> <span class="text-muted">open tasks,
+                                                    </span>
+                                                    <span class="text-xs">9</span> <span class="text-muted">tasks
+                                                        completed</span>
+                                                </small>
+                                                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing
+                                                    and
+                                                    typesetting industry. When an unknown printer took a galley of type
+                                                    and
+                                                    scrambled it...
+                                                </p>
+                                                <div class="pro-deadline m-b-15">
+                                                    <div class="sub-title">
+                                                        Deadline:
+                                                    </div>
+                                                    <div class="text-muted">
+                                                        17 Apr 2019
+                                                    </div>
+                                                </div>
+                                                <div class="project-members m-b-15">
+                                                    <div>Project Leader :</div>
+                                                    <ul class="team-members">
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Jeffery Lalor"><img alt=""
+                                                                    src="/Images/review3.png"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="project-members m-b-15">
+                                                    <div>Team :</div>
+                                                    <ul class="team-members">
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="John Doe"><img alt=""
+                                                                    src="/Images/review6.png"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Richard Miles"><img alt=""
+                                                                    src="/Images/review6.png"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="John Smith"><img alt=""
+                                                                    src="/Images/review6.png"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Mike Litorus"><img alt=""
+                                                                    src="/Images/review6.png"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="all-users">+15</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p class="m-b-5">Progress <span
+                                                        class="text-success float-right">40%</span></p>
+                                                <div class="progress progress-xs mb-0">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        data-bs-toggle="tooltip" title="" style="width: 40%"
+                                                        data-original-title="40%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="dropdown profile-action">
+                                                    <a href="#" class="action-icon dropdown-toggle"
+                                                        data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                            class="fa-solid fa-ellipsis-vertical"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-target="#edit_project"><i
+                                                                class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-target="#delete_project"><i
+                                                                class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                    </div>
+                                                </div>
+                                                <h4 class="project-title"><a href="project-view.html">Project
+                                                        Management</a></h4>
+                                                <small class="block text-ellipsis m-b-15">
+                                                    <span class="text-xs">2</span> <span class="text-muted">open tasks,
+                                                    </span>
+                                                    <span class="text-xs">5</span> <span class="text-muted">tasks
+                                                        completed</span>
+                                                </small>
+                                                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing
+                                                    and
+                                                    typesetting industry. When an unknown printer took a galley of type
+                                                    and
+                                                    scrambled it...
+                                                </p>
+                                                <div class="pro-deadline m-b-15">
+                                                    <div class="sub-title">
+                                                        Deadline:
+                                                    </div>
+                                                    <div class="text-muted">
+                                                        17 Apr 2019
+                                                    </div>
+                                                </div>
+                                                <div class="project-members m-b-15">
+                                                    <div>Project Leader :</div>
+                                                    <ul class="team-members">
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Jeffery Lalor"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-16.jpg"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="project-members m-b-15">
+                                                    <div>Team :</div>
+                                                    <ul class="team-members">
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="John Doe"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-02.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Richard Miles"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-09.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="John Smith"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-10.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Mike Litorus"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-05.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="all-users">+15</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p class="m-b-5">Progress <span
+                                                        class="text-success float-right">40%</span></p>
+                                                <div class="progress progress-xs mb-0">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        data-bs-toggle="tooltip" title="" style="width: 40%"
+                                                        data-original-title="40%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="dropdown profile-action">
+                                                    <a href="#" class="action-icon dropdown-toggle"
+                                                        data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                            class="fa-solid fa-ellipsis-vertical"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-target="#edit_project"><i
+                                                                class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-target="#delete_project"><i
+                                                                class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                    </div>
+                                                </div>
+                                                <h4 class="project-title"><a href="project-view.html">Video Calling
+                                                        App</a></h4>
+                                                <small class="block text-ellipsis m-b-15">
+                                                    <span class="text-xs">3</span> <span class="text-muted">open tasks,
+                                                    </span>
+                                                    <span class="text-xs">3</span> <span class="text-muted">tasks
+                                                        completed</span>
+                                                </small>
+                                                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing
+                                                    and
+                                                    typesetting industry. When an unknown printer took a galley of type
+                                                    and
+                                                    scrambled it...
+                                                </p>
+                                                <div class="pro-deadline m-b-15">
+                                                    <div class="sub-title">
+                                                        Deadline:
+                                                    </div>
+                                                    <div class="text-muted">
+                                                        17 Apr 2019
+                                                    </div>
+                                                </div>
+                                                <div class="project-members m-b-15">
+                                                    <div>Project Leader :</div>
+                                                    <ul class="team-members">
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Jeffery Lalor"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-16.jpg"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="project-members m-b-15">
+                                                    <div>Team :</div>
+                                                    <ul class="team-members">
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="John Doe"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-02.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Richard Miles"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-09.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="John Smith"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-10.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Mike Litorus"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-05.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="all-users">+15</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p class="m-b-5">Progress <span
+                                                        class="text-success float-right">40%</span></p>
+                                                <div class="progress progress-xs mb-0">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        data-bs-toggle="tooltip" title="" style="width: 40%"
+                                                        data-original-title="40%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="dropdown profile-action">
+                                                    <a href="#" class="action-icon dropdown-toggle"
+                                                        data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                            class="fa-solid fa-ellipsis-vertical"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-target="#edit_project"><i
+                                                                class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-target="#delete_project"><i
+                                                                class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                    </div>
+                                                </div>
+                                                <h4 class="project-title"><a href="project-view.html">Hospital
+                                                        Administration</a></h4>
+                                                <small class="block text-ellipsis m-b-15">
+                                                    <span class="text-xs">12</span> <span class="text-muted">open tasks,
+                                                    </span>
+                                                    <span class="text-xs">4</span> <span class="text-muted">tasks
+                                                        completed</span>
+                                                </small>
+                                                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing
+                                                    and
+                                                    typesetting industry. When an unknown printer took a galley of type
+                                                    and
+                                                    scrambled it...
+                                                </p>
+                                                <div class="pro-deadline m-b-15">
+                                                    <div class="sub-title">
+                                                        Deadline:
+                                                    </div>
+                                                    <div class="text-muted">
+                                                        17 Apr 2019
+                                                    </div>
+                                                </div>
+                                                <div class="project-members m-b-15">
+                                                    <div>Project Leader :</div>
+                                                    <ul class="team-members">
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Jeffery Lalor"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-16.jpg"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="project-members m-b-15">
+                                                    <div>Team :</div>
+                                                    <ul class="team-members">
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="John Doe"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-02.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Richard Miles"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-09.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="John Smith"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-10.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" data-bs-toggle="tooltip" title=""
+                                                                data-original-title="Mike Litorus"><img alt=""
+                                                                    src="/assets/img/profiles/avatar-05.jpg"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="all-users">+15</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <p class="m-b-5">Progress <span
+                                                        class="text-success float-right">40%</span></p>
+                                                <div class="progress progress-xs mb-0">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        data-bs-toggle="tooltip" title="" style="width: 40%"
+                                                        data-original-title="40%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Projects Tab -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- /Main Wrapper -->
+    <script src="/assets/dashboard_template.js"></script>
+</body>
+
+</html>

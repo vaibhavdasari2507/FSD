@@ -1,0 +1,147 @@
+.page-header {
+    margin-bottom: 1.875rem;
+}
+
+.page-title {
+    font-size: 18px;
+}
+
+.page-header .breadcrumb {
+    
+    background-color: transparent;
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.page-header .breadcrumb a {
+    color: #333;
+}
+
+.add-btn {
+    font-size: 14px;
+    min-width: inherit;
+    background-color: #3eaaec;
+    border: 1px solid #3eaaec;
+    border-radius: 50px;
+    color: #fff;
+    float: right;
+    font-weight: 500;
+    min-width: 140px;
+}
+
+.add-btn i {
+    margin-right: 5px;
+}
+
+.stats-info {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.stats-info h6 {
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.stats-info h4 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.table-responsive {
+    white-space: nowrap;
+    width: 100%;
+}
+
+.form-control-sm.form-control {
+    height: 30px;
+    border-radius: 0;
+}
+
+.form-control {
+    border-color: #e3e3e3;
+    box-shadow: none;
+    font-size: 15px;
+    height: 44px;
+}
+
+table.dataTable {
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+}
+
+.table {
+    color: #333;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.custom-table tr {
+    background-color: #fff;
+    box-shadow: 0 0 3px #e5e5e5;
+}
+
+
+.table thead th {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+table.table td h2.table-avatar {
+    align-items: center;
+    display: inline-flex;
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.custom-modal .modal-content {
+    border: 0;
+    border-radius: 10px;
+}
+
+.custom-modal .modal-header {
+    border: 0;
+    justify-content: center;
+    padding: 30px 30px 0;
+}
+
+
+.custom-modal .modal-title {
+    font-size: 22px;
+}
+
+.custom-modal .close {
+    background-color: #a0a0a0;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    z-index: 99;
+}
+
+.custom-modal .modal-body {
+    padding: 30px;
+}
+

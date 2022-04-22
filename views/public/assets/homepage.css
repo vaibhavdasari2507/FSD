@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Ubuntu:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap');
+
+body {
+  font-family: "Montserrat";
+}
+
+.logo-home {
+  width: 2.5%;
+  color: black;
+  margin-right: 2%;
+  font-size: 2rem;
+}
+
+/* -------------------------- Head home section -------------------------*/
+
+.head-home {
+  position: fixed;
+  width: 100%;
+  /* background-color: #3eaaec; */
+  background-color: #0d0a0b;
+  background-image: linear-gradient(315deg, #f0bbcd 0%, #7ee8fa 54%);
+
+
+  /* This padding is to cover the progess bar when it becomes sticky  */
+  /* Remove this padding if progress bar is removed */
+  padding-top: 4px;  
+}
+
+/* Header sticky  */
+
+.sticky {
+  box-shadow: rgb(0 0 0 / 15%) 0px 0.5rem 1rem;
+  /* background-color: #3eaaec; */
+  background-color: #0d0a0b;
+  background-image: linear-gradient(315deg, #f0bbcd 0%, #7ee8fa 74%);
+  padding-top: 0;
+  z-index: 2;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  display: none;
+  height: 4px;
+  background: #0704aa;
+  width: 0%;
+}
+
+/* navbar  */
+
+.navbar {
+  padding: 0% 3% 0 10%;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  color: rgb(0 0 0) !important;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.nav-item {
+  font-size: 1rem;
+  padding: 0 18px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(0 0 0);
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  font-size: 1.1rem;
+  color: rgb(13, 75, 248);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  font-size: 1.1rem;
+  color: rgb(13, 75, 248);
+  transition: all 0.1s ease;
+}
+
+.login-button {
+  color: #0d0a0b;
+  border-color: midnightblue;
+  font-size: 1rem;
+  align-items: center;
+  border-radius: 40px;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+}
+
+/* --------------------------- TITLE SECTION CSS ------------------------------- */
+
+/* Gradiant  */
+
+.intro-blue {
+  top: 0;
+  left: 0;
+  width: 65%;
+}
+
+.intro-bg {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#title {
+  /* background-color: #3eaaec; */
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+  padding-top: 7%;
+}
+
+.container-fluid {
+  padding: 3% 10% 5% 10%;
+}
+
+#title h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 44px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  font-weight: 800;
+  color: rgb(0, 0, 19);
+}
+
+.intro-desc{
+  margin-top: 10%;
+}
+
+.intro-desc p{
+  font-family: "Montserrat";
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.intro-desc ul {
+  margin-top: 38px;
+}
+.bullet-list {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding-left: 5px;
+}
+
+.bullet-list li {
+  font-size: 1.375rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+.bullet-list li :hover {
+  color: #8276ff;
+}
+
+.bullet-list-links {
+  color: #37434e;
+  transition: all .5s ease;
+  text-decoration: none;
+}
+
+.download-button {
+  font-size: 1.5rem;
+  padding: 1% 5% 1% ;
+  margin: 5% 3% 5% 0;
+}
+.get-started {
+  color: black;
+  border-color: black;
+  font-size: 1.5rem;
+  padding: 1% 5% 1% ;
+  margin: 5% 3% 5% 0;
+}
+
+.get-started:hover{
+  border-color: #ffffff;
+  color: rgb(89, 255, 214);
+  background-color: rgb(1, 145, 153)!important;
+}
+
+/* Floating Images */
+
+.intro-images {
+  margin-top: 73px;
+  margin-left: 70px;
+}
+
+.intro-images .row-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-images .row-img img {
+  position: absolute;
+}
+
+.intro-images .row1 .anim-1 {
+  left: 86px;
+  animation: anim-1 20s linear infinite;
+}
+
+.intro-images .row1 .anim-2 {
+  right: -40px;
+  transition: all 2s;
+  animation: anim-2 20s linear infinite;
+  animation-delay: 1s;
+}
+
+.intro-images .row1 .anim-3 {
+  right: 24px;
+  margin-top: -10px;
+  animation: anim-3 20s linear infinite;
+}
+
+.intro-images .row2 {
+  margin-top: 140px;
+}
+
+.intro-images .row2 .anim-4 {
+  left: 0;
+  margin-top: -67px;
+  animation: anim-4 20s linear infinite;
+}
+
+.intro-images .row2 .anim-5 {
+  left: -40px;
+  margin-top: 114px;
+  animation: anim-2 23s linear infinite;
+  animation-delay: 1.5s;
+}
+
+.intro-images .row2 .anim-6 {
+  left: 0;
+  margin-top: 251px;
+  z-index: 1;
+  animation: anim-1 22s linear infinite;
+}
+
+.intro-images .row2 .anim-7 {
+  margin-top: 67px;
+  right: -60px;
+  z-index: 1;
+  animation: anim-4 24s linear infinite;
+  animation-delay: .5s;
+}
+
+.intro-images .row2 .anim-8 {
+  right: -28px;
+  margin-top: -66px;
+  transition: all 2s;
+  animation: anim-1 24s linear infinite;
+  animation-delay: 1s;
+}
+
+.intro-images .row3 {
+  margin-top: 224px;
+}
+
+.intro-images .row3 .anim-9 {
+  left: 82px;
+  z-index: 1;
+  animation: anim-2 16s linear infinite;
+  animation-delay: 2s;
+}
+
+.intro-images .row3 .anim-10 {
+  right: -9px;
+  animation: anim-3 19s linear infinite;
+}
+
+/* Key frames  */
+
+@keyframes anim-1 {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(-10px);
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes anim-2 {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(20px);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateX(40px);
+  }
+  80% {
+    transform: translateX(-10px);
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes anim-3 {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-16px);
+  }
+  40% {
+    transform: translateY(-12px);
+  }
+  60% {
+    transform: translateX(25px);
+  }
+  80% {
+    transform: translateX(-10px);
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes anim-4 {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateY(16px);
+  }
+  40% {
+    transform: translateX(18px);
+  }
+  60% {
+    transform: translateX(28px);
+  }
+  80% {
+    transform: translate(-10px, 16px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+.timesheet {
+  width: 100%;
+  margin-left: 20%;
+  overflow: hidden;
+  /* filter: drop-shadow(0 5px 10px rgba(0,0,0,0.6)); */
+}
+/* --------------------------- FEATURES SECTION CSS ------------------------------- */
+
+#features {
+  padding: 5% 15%;
+}
+
+#features h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#features p {
+  font-size: 1.25rem;
+  color: #3f3e3e;
+}
+
+/* GRadiant  */
+
+.rect-outline--1 {
+  margin-top: -20rem;
+  left: 0;
+}
+#features .rect-bg {
+  position: absolute;
+  z-index: -1;
+  opacity: .12;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-title{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #37434e;
+  line-height: 1.5;
+}
+
+.content {
+  max-width: 1024px;
+  width: 100%;
+  padding: 3% 4% 3%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+}
+
+.card {
+  width: 380px;
+  height: 350px;
+  background-color: #ffffff;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width:80px;
+  background: linear-gradient(90deg, #092dcca1 0%, #29aae6 40%, rgba(0, 0, 0, 0.28) 60%);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+}
+
+.card .title {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
+  color: #3f3e3e;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card .text {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 20px;
+  color: #3f3e3e;
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: 0;
+  max-height:0;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  height: 400px;
+  background-image: url("../Images/background2.png");
+  background-size: cover;  
+}
+
+.card:hover .text {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 50px;
+}
+
+.card:hover .arrow-down{
+  display: none;
+}
+
+/* ----------------------- TESTIMONIALS SECTION ---------------------- */
+
+#testimonials {
+  
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+  text-align: center;
+}
+
+#testimonials h2 {
+  color: black;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+#testimonials p{
+  color: rgb(41, 41, 41);
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.testimonials-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-inner{
+  padding: 5% 15% 5%;
+}
+.carousel-item {
+  
+  padding: 3% 5% 3%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 0.5px solid black;
+  border-radius: 20px;
+}
+
+/* -------------------------------- Pricing panel ---------------------------- */
+
+section.section-pricing {
+  padding: 7% 0% 10%;
+  margin-top: 5%;
+  background: #dfedfc;
+}
+
+section.section-pricing .pricing-bg {
+  box-shadow: 2px 5px 8px 3px rgb(57 76 91 / 13%);
+  height: 300px;
+  width: 65%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-left: 0;
+  position: absolute;
+  left: 0;
+}
+
+section.section-pricing .price-bg {
+  z-index: 1;
+}
+.price-bg.rect-bg {
+  position: absolute;
+  opacity: .12;
+}
+
+section.section-pricing .img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+section.section-pricing .price-monthly {
+  z-index: 1;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 1.375rem;
+}
+
+section.section-pricing .price-def {
+  font-size: 1.375rem;
+  font-weight: 600;
+  text-align: right;
+  align-self: normal;
+  margin-right: 70px;
+  margin-bottom: 1rem;
+}
+
+section.section-pricing .price-monthly div span {
+  position: absolute;
+  margin-left: -28px;
+  font-size: 40px;
+  margin-top: -10px;
+}
+
+section.section-pricing p.price {
+  font-family: "Montserrat",sans-serif;
+  color: #1ed0c6;
+  font-size: 5.75rem;
+  font-weight: 700;
+  line-height: 1;
+  display: inline;
+}
+
+section.section-pricing .price-monthly .get-started{
+  padding: 1% 10% 1%;;
+}
+
+section.section-pricing .title-large {
+  line-height: 1;
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 10%;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+/* ---------------------------------- Faq ------------------------------------ */
+
+#faq{
+  margin: 10% 15% 5% 15%;
+}
+
+#faq .container{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  border-radius: 30px;
+  padding: 3% 10% 3% 10%;  
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+}
+
+.faq-title{
+  line-height: 1.25!important;
+   font-weight: 600!important;
+    font-size: 2.5rem;
+}
+
+.faq-image{
+  text-align: right;
+}
+
+.faq-desc{
+  padding-top: 2%;
+}
+
+/* --------------------------------- Footer ---------------------------------- */
+
+#footer {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5% 15%;
+}
+
+
+/* ------------------------------ Media queries ------------------------ */
+
+@media (max-width: 767px){
+  
+  .head-home{
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    
+    .logo-home{
+      font-size: 1.5rem;
+    }
+
+    .intro-images{
+      width: 0%;
+      display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .content {
+     padding-top: 300px;
+     flex-direction: column;
+  }
+}

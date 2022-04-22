@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - WebOffice</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Ubuntu:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons  -->
+    <script src="https://kit.fontawesome.com/49134e791d.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- External css  -->
+    <link rel="stylesheet" href="/assets/dashboard_template.css">
+    <link rel="stylesheet" href="/assets/attendanceAdmin.css">
+</head>
+
+<body>
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header">
+
+            <!-- Logo -->
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="/Images/review3.png" width="40" height="40" alt="">
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <a id="toggle_btn" href="javascript:void(0);">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- Header Title -->
+            <div class="page-title-box">
+                <h3>WebOffice</h3>
+            </div>
+            <!-- /Header Title -->
+
+            <!-- Header Menu -->
+            <ul class="nav user-menu">
+
+                <!-- Search -->
+                <li class="nav-item">
+                    <div class="top-nav-search">
+                        <form action="search.html">
+                            <input class="form-control" type="text" placeholder="Search here">
+                            <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </li>
+                <!-- /Search -->
+
+                <!-- Notifications -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i> <span class="badge badge-pill">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Notifications</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="assets/img/profiles/avatar-02.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">John Doe</span> added
+                                                    new task <span class="noti-title">Patient appointment booking</span>
+                                                </p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="assets/img/profiles/avatar-03.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Tarah Shropshire</span>
+                                                    changed the task name <span class="noti-title">Appointment booking
+                                                        with payment gateway</span></p>
+                                                <p class="noti-time"><span class="notification-time">6 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="assets/img/profiles/avatar-06.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Misty Tison</span>
+                                                    added <span class="noti-title">Domenic Houston</span> and <span
+                                                        class="noti-title">Claire Mapes</span> to project <span
+                                                        class="noti-title">Doctor available module</span></p>
+                                                <p class="noti-time"><span class="notification-time">8 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="assets/img/profiles/avatar-17.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Rolland Webber</span>
+                                                    completed task <span class="noti-title">Patient and Doctor video
+                                                        conferencing</span></p>
+                                                <p class="noti-time"><span class="notification-time">12 mins ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="assets/img/profiles/avatar-13.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bernardo Galaviz</span>
+                                                    added new task <span class="noti-title">Private chat module</span>
+                                                </p>
+                                                <p class="noti-time"><span class="notification-time">2 days ago</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- /Notifications -->
+
+                <!-- Message Notifications -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-comment-o"></i> <span class="badge badge-pill">8</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Messages</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="assets/img/profiles/avatar-09.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Richard Miles </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="assets/img/profiles/avatar-02.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">John Doe</span>
+                                                <span class="message-time">6 Mar</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="assets/img/profiles/avatar-03.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Tarah Shropshire </span>
+                                                <span class="message-time">5 Mar</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="assets/img/profiles/avatar-05.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Mike Litorus</span>
+                                                <span class="message-time">3 Mar</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="assets/img/profiles/avatar-08.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Catherine Manseau </span>
+                                                <span class="message-time">27 Feb</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="chat.html">View all Messages</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- /Message Notifications -->
+
+                <li class="nav-item dropdown has-arrow main-drop">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <span class="user-img"><img src="/Images/review3.png" alt="">
+                            <span class="status online"></span></span>
+                        <span>Admin</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/employeeprofile">My Profile</a>
+                        <a class="dropdown-item" href="settings.html">Settings</a>
+                        <a class="dropdown-item" href="/login">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- /Header Menu -->
+
+        </div>
+        <!-- /Header -->
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/dashboard">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="/employee">
+                        <span class="icon">
+                            <i class="fa-solid fa-users"></i>
+                        </span>
+                        <span class="title">Employees</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/projects">
+                        <span class="icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </span>
+                        <span class="title">Projects</span>
+                    </a>
+                </li>
+                <li class="active-btn">
+                    <a href="/attendance" >
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="title">Attendance</span>
+                    </a>
+                </li>
+                <li>
+                <li>
+                    <a href="/clients">
+                        <span class="icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </span>
+                        <span class="title">Clients</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/leaves" >
+                        <span class="icon">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        <span class="title">Leaves</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="/events">
+                        <span class="icon">
+                            <ion-icon name="calendar-number-outline"></ion-icon>
+                        </span>
+                        <span class="title">Events</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="/clientprofile">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span class="title">Clients profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/settings">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="page-title">Attendance</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Attendance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Page Header -->
+
+                <!-- Main html code goes here  -->
+
+                <div class="row filter-row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="form-group form-focus">
+                            <input type="text" class="form-control floating">
+                            <label class="focus-label">Employee Name</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="form-group form-focus select-focus focused" data-select2-id="select2-data-86-xc2w">
+                            <select class="select floating select2-hidden-accessible"
+                                data-select2-id="select2-data-1-ahfa" tabindex="-1" aria-hidden="true">
+                                <option data-select2-id="select2-data-3-bxsw">-</option>
+                                <option data-select2-id="select2-data-28-fy3v">Jan</option>
+                                <option data-select2-id="select2-data-29-f02w">Feb</option>
+                                <option data-select2-id="select2-data-30-t0h8">Mar</option>
+                                <option data-select2-id="select2-data-31-ody0">Apr</option>
+                                <option data-select2-id="select2-data-32-m4nc">May</option>
+                                <option data-select2-id="select2-data-33-xc1r">Jun</option>
+                                <option data-select2-id="select2-data-34-zmgu">Jul</option>
+                                <option data-select2-id="select2-data-35-0e7o">Aug</option>
+                                <option data-select2-id="select2-data-36-723f">Sep</option>
+                                <option data-select2-id="select2-data-37-aece">Oct</option>
+                                <option data-select2-id="select2-data-38-fzoy">Nov</option>
+                                <option data-select2-id="select2-data-39-lp4p">Dec</option>
+                            </select><span
+                                class="select2 select2-container select2-container--default select2-container--below"
+                                dir="ltr" data-select2-id="select2-data-2-l9z6" style="width: 100%;"><span
+                                    class="selection"><span class="select2-selection select2-selection--single"
+                                        role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                        aria-disabled="false" aria-labelledby="select2-eo8h-container"
+                                        aria-controls="select2-eo8h-container"><span class="select2-selection__rendered"
+                                            id="select2-eo8h-container" role="textbox" aria-readonly="true"
+                                            title="-">-</span><span class="select2-selection__arrow"
+                                            role="presentation"><b role="presentation"></b></span></span></span><span
+                                    class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            <label class="focus-label">Select Month</label>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="form-group form-focus select-focus focused">
+                            <select class="select floating select2-hidden-accessible"
+                                data-select2-id="select2-data-4-apgv" tabindex="-1" aria-hidden="true">
+                                <option data-select2-id="select2-data-6-vedp">-</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2017</option>
+                                <option>2016</option>
+                                <option>2015</option>
+                            </select>
+                            <span class="select2 select2-container select2-container--default" dir="ltr"
+                                data-select2-id="select2-data-5-3ago" style="width: 100%;"><span class="selection"><span
+                                        class="select2-selection select2-selection--single" role="combobox"
+                                        aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false"
+                                        aria-labelledby="select2-c7o5-container"
+                                        aria-controls="select2-c7o5-container"><span class="select2-selection__rendered"
+                                            id="select2-c7o5-container" role="textbox" aria-readonly="true"
+                                            title="-">-</span><span class="select2-selection__arrow"
+                                            role="presentation"><b role="presentation"></b></span></span></span><span
+                                    class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            <label class="focus-label">Select Year</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#" class="btn btn-success btn-block"> Search </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="table-responsive">
+                                <table class="table table-striped custom-table table-nowrap mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Employee</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                            <th>6</th>
+                                            <th>7</th>
+                                            <th>8</th>
+                                            <th>9</th>
+                                            <th>10</th>
+                                            <th>11</th>
+                                            <th>12</th>
+                                            <th>13</th>
+                                            <th>14</th>
+                                            <th>15</th>
+                                            <th>16</th>
+                                            <th>17</th>
+                                            <th>18</th>
+                                            <th>19</th>
+                                            <th>20</th>
+                                            <th>22</th>
+                                            <th>23</th>
+                                            <th>24</th>
+                                            <th>25</th>
+                                            <th>26</th>
+                                            <th>27</th>
+                                            <th>28</th>
+                                            <th>29</th>
+                                            <th>30</th>
+                                            <th>31</th>
+                                        </tr>
+                                    </thead>
+
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- /Main Wrapper -->
+    <script src="/assets/dashboard_template.js"></script>
+</body>
+
+</html>

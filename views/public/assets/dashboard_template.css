@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Ubuntu:wght@300;400;700&display=swap');
+
+/* header bar  */
+
+body a{
+    text-decoration: none !important;
+}
+
+.header{
+    background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+    height: 60px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1002;
+}
+
+.header .header-left {
+    float: left;
+    height: 60px;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+    width: 230px;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+.header .header-left .logo {
+    display: inline-block;
+    line-height: 60px;
+}
+#toggle_btn {
+    color: #999;
+    float: left;
+    font-size: 26px;
+    line-height: 60px;
+    padding: 0 10px;
+}
+.page-title-box {
+    border-radius: 0;
+    float: left;
+    height: 60px;
+    margin-bottom: 0;
+    padding: 17px 20px;
+}
+.page-title-box h3 {
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    font-weight: normal;
+    margin: 0;
+}
+.user-menu {
+    float: right;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+}
+.top-nav-search form {
+    margin-top: 10px;
+    position: relative;
+    width: 230px;
+}
+.top-nav-search .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    color: black;
+    height: 40px;
+    padding: 10px 50px 10px 15px;
+}
+.top-nav-search .btn {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(43, 40, 40, 0.7);
+    min-height: 40px;
+    padding: 7px 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.user-menu.nav > li > a {
+    color: black;
+    font-size: 15px;
+    line-height: 60px;
+    padding: 0 15px;
+    height: 60px;
+}
+
+.dropdown-menu {
+    font-size: 13px;
+}
+
+.dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    transform-origin: left top 0;
+    box-shadow: inherit;
+    background-color: #fff;
+}
+
+.user-menu.nav > li > a > i {
+    font-size: 20px;
+    line-height: 60px;
+}
+.user-menu.nav > li > a .badge {
+    background-color: #7460ee;
+}
+.user-menu.nav > li > a .badge {
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    right: 3px;
+    top: 6px;
+}
+.user-img {
+    display: inline-block;
+    position: relative;
+}
+.main-drop .user-img img {
+    border-radius: 50%;
+    width: 30px;
+}
+.user-menu .user-img .status {
+    bottom: 12px;
+}
+.status.online {
+    background-color: #55ce63;
+}
+.user-img .status {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    width: 10px;
+}
+
+/* Notifications  */
+
+.notifications {
+    padding: 0;
+}
+
+.topnav-dropdown-header, .topnav-dropdown-footer {
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.topnav-dropdown-header {
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+.topnav-dropdown-header .notification-title {
+    color: #333;
+    display: block;
+    float: left;
+    font-size: 14px;
+}
+.topnav-dropdown-header .clear-noti {
+    color: #f83f37;
+    float: right;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.notifications .noti-content {
+    height: 290px;
+    width: 350px;
+    overflow-y: auto;
+    position: relative;
+}
+.notification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.notifications ul.notification-list > li {
+    margin-top: 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+.notifications ul.notification-list > li a {
+    display: block;
+    padding: 12px;
+    border-radius: 2px;
+}
+
+.avatar {
+    background-color: #aaa;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    text-decoration: none;
+    width: 38px;
+    position: relative;
+}
+
+.avatar > img {
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+}
+
+.noti-details {
+    color: #989c9e;
+    margin-bottom: 0;
+}
+.noti-title {
+    color: #333;
+}
+.notifications .notification-time {
+    font-size: 12px;
+    line-height: 1.35;
+    color: #bdbdbd;
+}
+
+.notification-message a{
+    color: black;
+}
+
+/* V's Dash or sidebar */
+
+.navigation{
+    position: fixed;
+    width:235px;
+    top: 60px;
+    height: 100%;
+    background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    border-left: 10px solid #7ee8fa;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation.active{
+    width: 85px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+}
+.navigation ul li{
+    position: relative;
+    width:100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.navigation ul li:hover,
+.active-btn{
+    font-size: 1.15rem;
+    background: white;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.navigation ul li:hover a,
+.active-btn a{
+    color: #3eaaec !important;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon{
+    font-size: 1.75em;
+}
+
+.navigation ul li a .icon .fa-list-check{
+    font-size: 1.5em;
+}
+
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 17px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: normal;
+}
+
+.navigation ul li:hover a::before,
+.active-btn a::before{
+    content:'';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px white;
+}
+.navigation ul li:hover a::after,
+.active-btn a::after{
+    content:'';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px white;
+    pointer-events: none;
+}
+
+.fa-solid{
+    font-size: 22px;
+}
+
+.fa-clipboard-list{
+    font-size: 26px;
+}
+
+/* page wrapper main  */
+
+.page-wrapper {
+    left: 0px;
+    margin-left: 235px;
+    padding-top: 60px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.page-wrapper.active{
+    margin-left:85px;
+}
+
+.page-wrapper > .content {
+    padding: 30px;
+}
+.page-header {
+    margin-bottom: 1.875rem;
+}
+.page-title {
+    color: #1f1f1f;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.page-header .breadcrumb {
+    background-color: transparent;
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0;
+}
+.page-header .breadcrumb a {
+    color: #333;
+}
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+
+/* Main page content CSS goes here  */
+

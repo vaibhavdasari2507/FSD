@@ -1,0 +1,30 @@
+.experience-list > li .experience-content .timeline-content a.name {
+    color: #616161;
+    font-weight: bold;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.edit-icon {
+    background-color: #eee;
+    border: 1px solid #e3e3e3;
+    border-radius: 24px;
+    color: #bbb;
+    float: right;
+    font-size: 12px;
+    line-height: 24px;
+    min-height: 26px;
+    text-align: center;
+    width: 26px;
+}
+.personal-info li .text {
+    color: #8e8e8e;
+    display: block;
+    overflow: hidden;
+
+}

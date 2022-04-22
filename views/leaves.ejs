@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Leaves</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Ubuntu:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    
+    <!-- Icons  -->
+    <script src="https://kit.fontawesome.com/49134e791d.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- External css  -->
+    <link rel="stylesheet" href="/assets/dashboard_template.css">
+    <link rel="stylesheet" href="/assets/Emp_leaves.css">
+</head>
+
+<body>
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header">
+        
+            <!-- Logo -->
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="/Images/review3.png" width="40" height="40" alt="">
+                </a>
+            </div>
+            <!-- /Logo -->
+            
+            <a id="toggle_btn" href="javascript:void(0);">
+                <i class="fa fa-bars"></i>
+            </a>
+            
+            <!-- Header Title -->
+            <div class="page-title-box">
+                <h3>WebOffice</h3>
+            </div>
+            <!-- /Header Title -->
+            
+            <!-- Header Menu -->
+            <ul class="nav user-menu">
+            
+                <!-- Search -->
+                <li class="nav-item">
+                    <div class="top-nav-search">
+                        <form action="search.html">
+                            <input class="form-control" type="text" placeholder="Search here">
+                            <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </li>
+                <!-- /Search -->
+            
+                <!-- Notifications -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i> <span class="badge badge-pill">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Notifications</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="/assets/img/profiles/avatar-02.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="/assets/img/profiles/avatar-03.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
+                                                <p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="/assets/img/profiles/avatar-06.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
+                                                <p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="/assets/img/profiles/avatar-17.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
+                                                <p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="/assets/img/profiles/avatar-13.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
+                                                <p class="noti-time"><span class="notification-time">2 days ago</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- /Notifications -->
+                
+                <!-- Message Notifications -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <i class="fa fa-comment-o"></i> <span class="badge badge-pill">8</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Messages</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="/assets/img/profiles/avatar-09.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Richard Miles </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="/assets/img/profiles/avatar-02.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">John Doe</span>
+                                                <span class="message-time">6 Mar</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="/assets/img/profiles/avatar-03.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Tarah Shropshire </span>
+                                                <span class="message-time">5 Mar</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="/assets/img/profiles/avatar-05.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Mike Litorus</span>
+                                                <span class="message-time">3 Mar</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">
+                                                    <img alt="" src="/assets/img/profiles/avatar-08.jpg">
+                                                </span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Catherine Manseau </span>
+                                                <span class="message-time">27 Feb</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="chat.html">View all Messages</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- /Message Notifications -->
+
+                <li class="nav-item dropdown has-arrow main-drop">
+                    <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                        <span class="user-img"><img src="/Images/review3.png" alt="">
+                        <span class="status online"></span></span>
+                        <span>Admin</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/employeeprofile">My Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="/login">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- /Header Menu -->
+            
+        </div>
+        <!-- /Header -->
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/dashboard">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li  >
+                    <a href="/employee">
+                      <span class="icon">
+                        <i class="fa-solid fa-users"></i>
+                      </span>
+                      <span class="title">Employees</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/projects">
+                      <span class="icon">
+                        <i class="fa-solid fa-list-check"></i>
+                      </span>
+                      <span class="title">Projects</span>
+                    </a>
+                  </li>
+                <li>
+                    <a href="/attendance">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="title">Attendance</span>
+                    </a>
+                </li>
+                <li>
+                <li>
+                    <a href="/clients">
+                        <span class="icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </span>
+                        <span class="title">Clients</span>
+                    </a>
+                </li>
+                <li class="active-btn">
+                    <a href="/leaves">
+                        <span class="icon">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        <span class="title">Leaves</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/clientprofile">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span class="title">Clients profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/settings">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+          </div>
+
+
+        <div class="page-wrapper">
+            <div class="content container-fluid">
+
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h3 class="page-title">Leaves</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Leaves</li>
+                            </ul>
+                        </div>
+                        <div class="col-auto float-right ml-auto">
+                            <a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_leave"><i
+                                    class="fa fa-plus"></i> Add Leave</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- /Page Header -->
+
+                <!-- Leave Statistics -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="stats-info">
+                            <h6>Annual Leave</h6>
+                            <h4>12</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-info">
+                            <h6>Medical Leave</h6>
+                            <h4>3</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-info">
+                            <h6>Other Leave</h6>
+                            <h4>4</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-info">
+                            <h6>Remaining Leave</h6>
+                            <h4>5</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Leave Statistics -->
+
+
+                <!-- Table using Data table cdn  -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="dataTables_length" id="DataTables_Table_0_length"><label>Show
+                                                <select name="DataTables_Table_0_length"
+                                                    aria-controls="DataTables_Table_0"
+                                                    class="custom-select custom-select-sm form-control form-control-sm">
+                                                    <option value="10">10</option>
+                                                    <option value="25">25</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                </select> entries</label></div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <table
+                                            class="table table-striped custom-table mb-0 datatable dataTable no-footer"
+                                            id="DataTables_Table_0" role="grid"
+                                            aria-describedby="DataTables_Table_0_info">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="sorting_asc" tabindex="0"
+                                                        aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                                                        aria-sort="ascending"
+                                                        aria-label="Leave Type: activate to sort column descending"
+                                                        style="width: 112.075px;">Leave Type</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="From: activate to sort column ascending"
+                                                        style="width: 85.4625px;">From</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="To: activate to sort column ascending"
+                                                        style="width: 85.4625px;">To</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="No of Days: activate to sort column ascending"
+                                                        style="width: 99.1375px;">No of Days</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Reason: activate to sort column ascending"
+                                                        style="width: 128.25px;">Reason</th>
+                                                    <th class="text-center sorting" tabindex="0"
+                                                        aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                                                        aria-label="Status: activate to sort column ascending"
+                                                        style="width: 110.925px;">Status</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Approved by: activate to sort column ascending"
+                                                        style="width: 136.825px;">Approved by</th>
+                                                    <th class="text-right sorting" tabindex="0"
+                                                        aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                                                        aria-label="Actions: activate to sort column ascending"
+                                                        style="width: 71.0625px;">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="odd">
+                                                    <td class="sorting_1">Casual Leave</td>
+                                                    <td>8 Mar 2019</td>
+                                                    <td>9 Mar 2019</td>
+                                                    <td>2 days</td>
+                                                    <td>Going to Hospital</td>
+                                                    <td class="text-center">
+                                                        <div class="action-label">
+                                                            <a class="btn btn-white btn-sm btn-rounded"
+                                                                href="javascript:void(0);">
+                                                                <i class="fa fa-dot-circle-o text-purple"></i> New
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <h2 class="table-avatar">
+                                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                                    src="/Images/review4.png" alt=""></a>
+                                                            <a href="#">Richard Miles</a>
+                                                        </h2>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="dropdown dropdown-action">
+                                                            <a href="#" class="action-icon dropdown-toggle"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-target="#edit_leave"><i
+                                                                        class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-target="#delete_approve"><i
+                                                                        class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="odd">
+                                                    <td class="sorting_1">Casual Leave</td>
+                                                    <td>13 Jan 2019</td>
+                                                    <td>14 Jan 2019</td>
+                                                    <td>2 days</td>
+                                                    <td>Going to Hospital</td>
+                                                    <td class="text-center">
+                                                        <div class="action-label">
+                                                            <a class="btn btn-white btn-sm btn-rounded"
+                                                                href="javascript:void(0);">
+                                                                <i class="fa fa-dot-circle-o text-success"></i> Approved
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <h2 class="table-avatar">
+                                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                                    src="/Images/review6.png" alt=""></a>
+                                                            <a href="#">Richard Miles</a>
+                                                        </h2>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="dropdown dropdown-action">
+                                                            <a href="#" class="action-icon dropdown-toggle"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-target="#edit_leave"><i
+                                                                        class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-target="#delete_approve"><i
+                                                                        class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="even">
+                                                    <td class="sorting_1">Casual Leave</td>
+                                                    <td>10 Jan 2019</td>
+                                                    <td>10 Jan 2019</td>
+                                                    <td>First Half</td>
+                                                    <td>Going to Hospital</td>
+                                                    <td class="text-center">
+                                                        <div class="action-label">
+                                                            <a class="btn btn-white btn-sm btn-rounded"
+                                                                href="javascript:void(0);">
+                                                                <i class="fa fa-dot-circle-o text-danger"></i> Declined
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <h2 class="table-avatar">
+                                                            <a href="profile.html" class="avatar avatar-xs"><img
+                                                                    src="/Images/review3.png" alt=""></a>
+                                                            <a href="#">Richard Miles</a>
+                                                        </h2>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <div class="dropdown dropdown-action">
+                                                            <a href="#" class="action-icon dropdown-toggle"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-target="#edit_leave"><i
+                                                                        class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-target="#delete_approve"><i
+                                                                        class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="dataTables_info" id="DataTables_Table_0_info" role="status"
+                                            aria-live="polite">Showing 1 to 8 of 8 entries</div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <div class="dataTables_paginate paging_simple_numbers"
+                                            id="DataTables_Table_0_paginate">
+                                            <ul class="pagination">
+                                                <li class="paginate_button page-item previous disabled"
+                                                    id="DataTables_Table_0_previous"><a href="#"
+                                                        aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0"
+                                                        class="page-link">Previous</a></li>
+                                                <li class="paginate_button page-item active"><a href="#"
+                                                        aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0"
+                                                        class="page-link">1</a></li>
+                                                <li class="paginate_button page-item next disabled"
+                                                    id="DataTables_Table_0_next"><a href="#"
+                                                        aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0"
+                                                        class="page-link">Next</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main html code goes here  -->
+
+                <!-- Leave statistics -->
+                
+            </div>
+
+            <!-- Add leave Model -->
+            <div id="add_leave" class="modal custom-modal fade" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Add Leave</h5>
+                            <button type="button" class="btn-close btn-outline-light" data-bs-dismiss="modal"
+                                aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label>Leave Type <span class="text-danger">*</span></label>
+                                    <select class="select " >
+                                        <option ">Select Leave Type</option>
+                                        <option>Casual Leave 12 Days</option>
+                                        <option>Medical Leave</option>
+                                        <option>Loss of Pay</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>From <span class="text-danger">*</span></label>
+                                    <div class="cal-icon">
+                                        <input class="form-control datetimepicker" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>To <span class="text-danger">*</span></label>
+                                    <div class="cal-icon">
+                                        <input class="form-control datetimepicker" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Number of days <span class="text-danger">*</span></label>
+                                    <input class="form-control" readonly="" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label>Remaining Leaves <span class="text-danger">*</span></label>
+                                    <input class="form-control" readonly="" value="12" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label>Leave Reason <span class="text-danger">*</span></label>
+                                    <textarea rows="4" class="form-control"></textarea>
+                                </div>
+                                <div class="submit-section">
+                                    <button class="btn btn-primary submit-btn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Add leave Model -->
+        </div>
+        <!-- /Main Wrapper -->
+        <script src="/assets/dashboard_template.js"></script>
+</body>
+
+</html>
