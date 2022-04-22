@@ -6,8 +6,8 @@ const User = require('./user');
 const Attendance = require('./attendance');
 const Project = require('./project');
 let user;
-// let userAuth;
 let present;
+
 mongoose.connect('mongodb://localhost:27017/registrationUser', {
     useNewUrlParser: true, useUnifiedTopology: true
 })
@@ -111,3 +111,6 @@ app.get('/att',async(req,res)=>{
 app.listen(3000, () => {
     console.log("Website running on port:3000")
 })
+
+
+ellnkjsdhfkljashdfkjadfjajkj
