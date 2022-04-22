@@ -284,7 +284,7 @@
         <div class="navigation">
             <ul>
                 <li>
-                    <a href="/dashboard">
+                    <a href="/login">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -405,7 +405,7 @@
               </div>
 
                 <div class="row staff-grid-row">
-                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3"> 
                         <div class="profile-widget">
                             <div class="profile-img">
                                 <a href="profile.html" class="avatar"><img src="/Images/review3.png" alt=""></a>
@@ -536,6 +536,118 @@
                 </div>
 
             </div>
+
+            <!-- Add employee form  -->
+
+            <div id="add_employee" class="modal custom-modal fade" role="dialog" aria-modal="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Add Employee</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label">First Name <span class="text-danger">*</span></label>
+                                            <input class="form-control" name="fname" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label">Last Name</label>
+                                            <input class="form-control" name="lname" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label">Username <span class="text-danger">*</span></label>
+                                            <input class="form-control" name="Username" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label">Email <span class="text-danger">*</span></label>
+                                            <input class="form-control" name="email" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label">Password</label>
+                                            <input class="form-control" name="pass" type="password">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label">Confirm Password</label>
+                                            <input class="form-control" name="cpass" type="password">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">  
+                                        <div class="form-group">
+                                            <label class="col-form-label">Employee ID <span class="text-danger">*</span></label>
+                                            <input type="text" name="employeeid" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">  
+                                        <div class="form-group">
+                                            <label class="col-form-label">Joining Date <span class="text-danger">*</span></label>
+                                            <div class="cal-icon"><input class="form-control datetimepicker" name="joindate" type="text"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label">Phone </label>
+                                            <input class="form-control" name="phone" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label">Company</label>
+                                            <select class="select" name="company" tabindex="-1" aria-hidden="true">
+                                                <option value="Global Technologies">Global Technologies</option>
+                                                <option value="Delta Infotech">Delta Infotech</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Department <span class="text-danger">*</span></label>
+                                            <select class="select" name="department" tabindex="-1" aria-hidden="true">
+                                                <option value="NA">Select Department</option>
+                                                <option value="Web Development">Web Development</option>
+                                                <option value="IT Management">IT Management</option>
+                                                <option value="Marketing">Marketing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Designation <span class="text-danger">*</span></label>
+                                            <select class="select" name="designation" tabindex="-1" aria-hidden="true">
+                                                <option value="NA">Select Designation</option>
+                                                <option value="Web Designer">Web Designer</option>
+                                                <option value="Web Developer">Web Developer</option>
+                                                <option value="Android Developer">Android Developer</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="submit-section">
+                                    <button class="btn btn-primary submit-btn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit employee form -->
+
         </div>
 
     </div>
