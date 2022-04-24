@@ -9,6 +9,7 @@ const Employee = require('./employee')
 
 let user;
 let present;
+let projects;
 let emp;
 let empren;
 mongoose.connect('mongodb://localhost:27017/registrationUser', {
@@ -63,8 +64,9 @@ app.get('/leaves', (req, res) => {
 app.get('/attendance', (req, res) => {
     res.render('attendanceAdmin')
 })
-app.get('/projects', (req, res) => {
-    res.render('projects')
+app.get('/projects', async (req, res) => {
+    projects = await Project.find();
+    res.render('projects', {projects})
 })
 app.get('/employeeprofile', (req, res) => {
     res.render('employeeProfile')
@@ -117,6 +119,26 @@ app.post('/employee',async (req,res) => {
         } else {
             res.redirect('/employee')
         }
+})
+
+app.get('/deleteproject/:pid', (req, res) => {
+    let str = req.params.pid;
+    str = str.slice(1);
+    console.log(str);
+    Project.deleteOne({"_id" : ObjectId("62646a69d4e2279b34e3384d")});
+    res.redirect('/projects');
+})
+
+app.post('/projects', async (req, res) => {
+    // dbConn.then(function(db) {
+    //     db.collection('projects').insertOne(req.body);
+    // });
+    
+    projects = new Project(req.body);
+    console.log(req.body);
+    await projects.save();
+    res.redirect('/projects');
+    
 })
 
 // app.get('/att',async(req,res)=>{

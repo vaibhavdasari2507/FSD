@@ -305,7 +305,7 @@
         <div class="navigation">
             <ul>
                 <li>
-                    <a href="/dashboard">
+                    <a href="/login">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -382,7 +382,7 @@
                             <h3 class="page-title">Projects</h3>
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    <a href="dashboard.html">Dashboard</a>
+                                    <a href="/dashboard">Dashboard</a>
                                 </li>
                                 <li class="breadcrumb-item active">Projects</li>
                             </ul>
@@ -391,7 +391,7 @@
                             <a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#create_project"><i
                                     class="fa fa-plus"></i> Create Project</a>
                             <div class="view-icons">
-                                <a href="projects.html" class="grid-view btn btn-link active"><i
+                                <a href="/projects" class="grid-view btn btn-link active"><i
                                         class="fa fa-th"></i></a>
                                 <a href="#" class="list-view btn btn-link"><i class="fa fa-bars"></i></a>
                             </div>
@@ -430,312 +430,98 @@
                 <!-- Cards  -->
 
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="dropdown profile-action">
-                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-target="#edit_project"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-target="#delete_project"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                    </div>
-                                </div>
-                                <h4 class="project-title"><a href="project-view.html">Office Management</a></h4>
-                                <small class="d-block text-ellipsis mb-2">
-                                    <span class="text-xs">1</span> <span class="text-muted">open tasks, </span>
-                                    <span class="text-xs">9</span> <span class="text-muted">tasks completed</span>
-                                </small>
-                                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. When an unknown printer took a galley of type and
-                                    scrambled it...
-                                </p>
-                                <div class="pro-deadline mb-2">
-                                    <div class="sub-title">
-                                        Deadline:
-                                    </div>
-                                    <div class="text-muted">
-                                        17 Apr 2019
-                                    </div>
-                                </div>
-                                <div class="project-members mb-2">
-                                    <div>Project Leader :</div>
-                                    <ul class="team-members">
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Jeffery Lalor"><img alt=""
-                                                    src="/Images/review3.png"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="project-members mb-2">
-                                    <div>Team :</div>
-                                    <ul class="team-members">
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="John Doe"><img alt="" src="/Images/review6.png"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Richard Miles"><img alt=""
-                                                    src="/Images/review6.png"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="John Smith"><img alt=""
-                                                    src="/Images/review6.png"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Mike Litorus"><img alt=""
-                                                    src="/Images/review6.png"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="all-users">+15</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p class="mb-2">Progress <span class="text-success float-right">40%</span></p>
-                                <div class="progress progress-xs mb-0">
-                                    <div class="progress-bar bg-success" role="progressbar" data-bs-toggle="tooltip"
-                                        title="" style="width: 40%" data-original-title="40%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="dropdown profile-action">
-                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-target="#edit_project"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-target="#delete_project"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                    </div>
-                                </div>
-                                <h4 class="project-title"><a href="project-view.html">Project Management</a></h4>
-                                <small class="d-block text-ellipsis mb-2">
-                                    <span class="text-xs">2</span> <span class="text-muted">open tasks, </span>
-                                    <span class="text-xs">5</span> <span class="text-muted">tasks completed</span>
-                                </small>
-                                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. When an unknown printer took a galley of type and
-                                    scrambled it...
-                                </p>
-                                <div class="pro-deadline mb-2">
-                                    <div class="sub-title">
-                                        Deadline:
-                                    </div>
-                                    <div class="text-muted">
-                                        17 Apr 2019
-                                    </div>
-                                </div>
-                                <div class="project-members mb-2">
-                                    <div>Project Leader :</div>
-                                    <ul class="team-members">
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Jeffery Lalor"><img alt=""
-                                                    src="/assets/img/profiles/avatar-16.jpg"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="project-members mb-2">
-                                    <div>Team :</div>
-                                    <ul class="team-members">
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="John Doe"><img alt=""
-                                                    src="/assets/img/profiles/avatar-02.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Richard Miles"><img alt=""
-                                                    src="/assets/img/profiles/avatar-09.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="John Smith"><img alt=""
-                                                    src="/assets/img/profiles/avatar-10.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Mike Litorus"><img alt=""
-                                                    src="/assets/img/profiles/avatar-05.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="all-users">+15</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p class="mb-2">Progress <span class="text-success float-right">40%</span></p>
-                                <div class="progress progress-xs mb-0">
-                                    <div class="progress-bar bg-success" role="progressbar" data-bs-toggle="tooltip"
-                                        title="" style="width: 40%" data-original-title="40%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <% if(projects.length!=0){ %>
+                        <% projects.forEach(function (project) { %>
 
-                    <div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="dropdown profile-action">
-                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-target="#edit_project"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-target="#delete_project"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                    </div>
-                                </div>
-                                <h4 class="project-title"><a href="project-view.html">Video Calling App</a></h4>
-                                <small class="d-block text-ellipsis mb-2">
-                                    <span class="text-xs">3</span> <span class="text-muted">open tasks, </span>
-                                    <span class="text-xs">3</span> <span class="text-muted">tasks completed</span>
-                                </small>
-                                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. When an unknown printer took a galley of type and
-                                    scrambled it...
-                                </p>
-                                <div class="pro-deadline mb-2">
-                                    <div class="sub-title">
-                                        Deadline:
-                                    </div>
-                                    <div class="text-muted">
-                                        17 Apr 2019
-                                    </div>
-                                </div>
-                                <div class="project-members mb-2">
-                                    <div>Project Leader :</div>
-                                    <ul class="team-members">
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Jeffery Lalor"><img alt=""
-                                                    src="/assets/img/profiles/avatar-16.jpg"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="project-members mb-2">
-                                    <div>Team :</div>
-                                    <ul class="team-members">
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="John Doe"><img alt=""
-                                                    src="/assets/img/profiles/avatar-02.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Richard Miles"><img alt=""
-                                                    src="/assets/img/profiles/avatar-09.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="John Smith"><img alt=""
-                                                    src="/assets/img/profiles/avatar-10.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Mike Litorus"><img alt=""
-                                                    src="/assets/img/profiles/avatar-05.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="all-users">+15</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p class="mb-2">Progress <span class="text-success float-right">40%</span></p>
-                                <div class="progress progress-xs mb-0">
-                                    <div class="progress-bar bg-success" role="progressbar" data-bs-toggle="tooltip"
-                                        title="" style="width: 40%" data-original-title="40%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            <!-- Card  -->
 
-                    <div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="dropdown profile-action">
-                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-target="#edit_project"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-target="#delete_project"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                            <div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown profile-action">
+                                            <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
+                                                aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#edit_project"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"                  data-bs-target="#delete_project"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                        <h4 class="project-title"><a href="/project-view/:<%=project._id%> "><%= project.projectName %></a></h4>
+                                        <p class="text-muted"><%= project.pdescription %></p>
+                                        <div class="pro-deadline mb-2">
+                                            <div class="sub-title">
+                                                Deadline:
+                                            </div>
+                                            <div class="text-muted">
+                                                <%= project.endDate %>
+                                            </div>
+                                        </div>
+                                        <div class="project-members mb-2">
+                                            <div>Project Leader :</div>
+                                            <ul class="team-members">
+                                                <li>
+                                                    <a href="#" data-bs-toggle="tooltip" title=""
+                                                        data-original-title="Jeffery Lalor"><img alt=""
+                                                            src="/Images/review3.png"></a>
+                                                </li>
+
+                                                <p><%= project.projectLeader %></p>
+                                            </ul>
+                                        </div>
+                                        <div class="project-members mb-2">
+                                            <div>Team :</div>
+                                            <ul class="team-members">
+                                                <% for(let i=0; i < project.team.length; i++){ %>
+                                                    <% if(i < 5) {%>
+                                                    <li>
+                                                        <a href="#" title=""><img alt="" src="/Images/review4.png"></a>
+                                                    </li>
+                                                    <% } %>
+                                                <% } %>
+                                                <% if(project.team.length > 5) { %>
+                                                <li>
+                                                    <a href="#" class="all-users">+<%= (project.team.length - 5) %></a>
+                                                </li>
+                                                <% } %>
+                                            </ul>
+                                        </div>
+                                        <p class="mb-2">Progress <span class="text-success float-right"><%= project.progress %></span></p>
+                                        
                                     </div>
-                                </div>
-                                <h4 class="project-title"><a href="project-view.html">Hospital Administration</a></h4>
-                                <small class="d-block text-ellipsis mb-2">
-                                    <span class="text-xs">12</span> <span class="text-muted">open tasks, </span>
-                                    <span class="text-xs">4</span> <span class="text-muted">tasks completed</span>
-                                </small>
-                                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. When an unknown printer took a galley of type and
-                                    scrambled it...
-                                </p>
-                                <div class="pro-deadline mb-2">
-                                    <div class="sub-title">
-                                        Deadline:
-                                    </div>
-                                    <div class="text-muted">
-                                        17 Apr 2019
-                                    </div>
-                                </div>
-                                <div class="project-members mb-2">
-                                    <div>Project Leader :</div>
-                                    <ul class="team-members">
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Jeffery Lalor"><img alt=""
-                                                    src="/assets/img/profiles/avatar-16.jpg"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="project-members mb-2">
-                                    <div>Team :</div>
-                                    <ul class="team-members">
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="John Doe"><img alt=""
-                                                    src="/assets/img/profiles/avatar-02.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Richard Miles"><img alt=""
-                                                    src="/assets/img/profiles/avatar-09.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="John Smith"><img alt=""
-                                                    src="/assets/img/profiles/avatar-10.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" data-bs-toggle="tooltip" title=""
-                                                data-original-title="Mike Litorus"><img alt=""
-                                                    src="/assets/img/profiles/avatar-05.jpg"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="all-users">+15</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p class="mb-2">Progress <span class="text-success float-right">40%</span></p>
-                                <div class="progress progress-xs mb-0">
-                                    <div class="progress-bar bg-success" role="progressbar" data-bs-toggle="tooltip"
-                                        title="" style="width: 40%" data-original-title="40%"></div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+
+
+                            <!-- delete Modal -->
+                            
+                            <div class="modal custom-modal fade" id="delete_project" role="dialog">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-body">
+                                      <div class="form-header">
+                                        <h3>Delete Project</h3>
+                                        <p>Are you sure want to delete?</p>
+                                      </div>
+                                      <div class="modal-btn delete-action">
+                                        <div class="row">
+                                          <div class="col-6">
+                                            <a href="/deleteproject/:<%=project._id%>" id="dltproject" class="btn btn-primary continue-btn">Delete</a>
+                                          </div>
+                                          <div class="col-6">
+                                            <a href=""  data-bs-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                        <% }) %>
+                    <% } %>
+
                 </div>
             </div>
         </div>
@@ -754,21 +540,21 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form method="post" action="/projects" id="addproject" onsubmit="Validateadd(event);">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Project Title</label>
-                                        <input class="form-control" placeholder="Project name" type="text" />
+                                        <input name="projectName" class="form-control minput" placeholder="Project name" type="text" />
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Client</label>
-                                        <select class="select modal-select">
-                                            <option value="client">-- Select --</option>
-                                            <option value="client">Global Technologies</option>
-                                            <option value="client">Delta Infotech</option>
+                                        <select name="clientName" class="select modal-select minput">
+                                            <option value="">-- Select --</option>
+                                            <option value="Global Technologies">Global Technologies</option>
+                                            <option value="Delta Infotech">Delta Infotech</option>
                                         </select>
                                     </div>
                                 </div>
@@ -778,7 +564,7 @@
                                     <div class="form-group">
                                         <label>Start Date</label>
                                         <div class="cal-icon">
-                                            <input class="form-control datetimepicker" type="text" />
+                                            <input name="startDate" class="form-control datetimepicker minput" type="text" />
                                         </div>
                                     </div>
                                 </div>
@@ -786,7 +572,7 @@
                                     <div class="form-group">
                                         <label>End Date</label>
                                         <div class="cal-icon">
-                                            <input class="form-control datetimepicker" type="text" />
+                                            <input name="endDate" class="form-control datetimepicker minput" type="text" />
                                         </div>
                                     </div>
                                 </div>
@@ -795,25 +581,16 @@
                                 <div class="col-sm-3">
                                     <div class="form-group">
                                         <label>Rate</label>
-                                        <input placeholder="₹500" class="form-control" type="text" />
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="form-group">
-                                        <label>&nbsp;</label>
-                                        <select class="select-focus">
-                                            <option>Hourly</option>
-                                            <option>Fixed</option>
-                                        </select>
+                                        <input name="budget" placeholder="₹500" class="form-control minput" type="text" />
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Priority</label>
-                                        <select class="select">
-                                            <option>High</option>
-                                            <option>Medium</option>
-                                            <option>Low</option>
+                                        <select name="priority" class="select minput">
+                                            <option value="3" >High</option>
+                                            <option value="2" >Medium</option>
+                                            <option value="1" >Low</option>
                                         </select>
                                     </div>
                                 </div>
@@ -822,27 +599,27 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Add Project Leader</label>
-                                        <input class="form-control" type="text" />
+                                        <input name="projectLeader" class="form-control minput" type="text" />
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Add Team</label>
-                                        <input class="form-control" type="text" />
+                                        <input name="team" id="teaminput" class="form-control minput" type="text"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Description</label>
-                                <textarea rows="4" class="form-control summernote"
+                                <textarea name="pdescription" rows="4" class="form-control summernote minput"
                                     placeholder="Enter your message here"></textarea>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label>Upload Files</label>
-                                <input class="form-control" type="file" />
-                            </div>
+                                <input class="form-control minput" type="file" />
+                            </div> -->
                             <div class="submit-section">
-                                <a href="/dashboard" class="btn btn-primary submit-btn">Submit</a>
+                                <button type="submit" class="btn btn-primary submit-btn">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -850,6 +627,31 @@
             </div>
         </div>
         <!-- /Create Project Modal -->
+
+        <!-- Delete project Modal  -->
+
+        <!-- <div class="modal custom-modal fade" id="delete_project" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="form-header">
+                    <h3>Delete Project</h3>
+                    <p>Are you sure want to delete?</p>
+                  </div>
+                  <div class="modal-btn delete-action">
+                    <div class="row">
+                      <div class="col-6">
+                        <a href="/deleteproject/:" id="dltproject" class="btn btn-primary continue-btn">Delete</a>
+                      </div>
+                      <div class="col-6">
+                        <a href=""  data-bs-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
 
     </div>
 

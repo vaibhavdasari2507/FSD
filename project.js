@@ -35,6 +35,10 @@ const projectSchema = new mongoose.Schema({
     pdescription:{
         type:String,
         required:true
+    },
+    progress:{
+        type: String,
+        default: 'Pending'            
     }
 })
 module.exports = mongoose.model('Project', projectSchema)
