@@ -5,9 +5,12 @@ const bcrypt = require('bcrypt');
 const User = require('./user');
 const Attendance = require('./attendance');
 const Project = require('./project');
+const Employee = require('./employee')
+
 let user;
 let present;
-
+let emp;
+let empren;
 mongoose.connect('mongodb://localhost:27017/registrationUser', {
     useNewUrlParser: true, useUnifiedTopology: true
 })
@@ -44,8 +47,9 @@ app.get('/contactus', (req, res) => {
 app.get('/dashboard', (req, res) => {
     res.render('dashboard', { user })
 })
-app.get('/employee', (req, res) => {
-    res.render('employee')
+app.get('/employee', async (req, res) => {
+    empren = await Employee.find();
+    res.render('employee',{empren})
 })
 app.get('/clients', (req, res) => {
     res.render('clients')
@@ -100,14 +104,29 @@ app.post('/auth', async (req, res) => {
         }
     }
 })
-app.get('/att',async(req,res)=>{
-    const attendance= new Attendance({
-        name:'vd',
-        att:['p','a','p','a','p','a','p','a']
-    })
-    await attendance.save();
-    res.send('added')   
+
+app.post('/employee',async (req,res) => {
+    const {fname,lname,uname,email,pwd,eid,jdate,phone,company,designation,department}=req.body;
+        present = await Employee.findOne({ email });
+        if (!present) {
+            emp = new Employee({
+                fname,lname,uname,email,pwd:'weboffice123',eid,jdate,phone,company,designation,department
+            })
+            await emp.save();
+            res.redirect('/employee')
+        } else {
+            res.redirect('/employee')
+        }
 })
+
+// app.get('/att',async(req,res)=>{
+//     const attendance= new Attendance({
+//         name:'vd',
+//         att:['p','a','p','a','p','a','p','a']
+//     })
+//     await attendance.save();
+//     res.send('added')   
+// })
 app.listen(3000, () => {
     console.log("Website running on port:3000")
 })
