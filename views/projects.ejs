@@ -305,7 +305,7 @@
         <div class="navigation">
             <ul>
                 <li>
-                    <a href="/login">
+                    <a href="/dashboard">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -443,9 +443,11 @@
                                             <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown"
                                                 aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#edit_project"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"                  data-bs-target="#delete_project"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                <!-- <form id="idpass" onsubmit="dltproject(event);" > -->
+                                                    <input type="text" id="idvalue" style="display: none;" value="<%= project._id %>">
+                                                    <a class="dropdown-item" href="/editproject/:<%= project._id %>" ><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="/deleteproject/:<%= project._id %>" ><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                <!-- </form> -->
                                             </div>
                                         </div>
                                         <h4 class="project-title"><a href="/project-view/:<%=project._id%> "><%= project.projectName %></a></h4>
@@ -467,57 +469,31 @@
                                                             src="/Images/review3.png"></a>
                                                 </li>
 
-                                                <p><%= project.projectLeader %></p>
+                                                <p style="margin-left: 5px; margin-top: 5px;"><%= project.projectLeader %></p>
                                             </ul>
                                         </div>
                                         <div class="project-members mb-2">
                                             <div>Team :</div>
                                             <ul class="team-members">
                                                 <% for(let i=0; i < project.team.length; i++){ %>
-                                                    <% if(i < 5) {%>
+                                                    <% if(i < 3) {%>
                                                     <li>
                                                         <a href="#" title=""><img alt="" src="/Images/review4.png"></a>
                                                     </li>
                                                     <% } %>
                                                 <% } %>
-                                                <% if(project.team.length > 5) { %>
+                                                <% if(project.team.length > 3) { %>
                                                 <li>
-                                                    <a href="#" class="all-users">+<%= (project.team.length - 5) %></a>
+                                                    <a href="#" class="all-users">+<%= (project.team.length - 3) %></a>
                                                 </li>
                                                 <% } %>
                                             </ul>
                                         </div>
-                                        <p class="mb-2">Progress <span class="text-success float-right"><%= project.progress %></span></p>
-                                        
+                                        <p class="mb-2">Priority : <span class="text-success float-right"><%= project.priority %></span></p>
+                                        <p class="mb-2">Status : <span class="text-success float-right"><%= project.progress %></span></p>
                                     </div>
                                 </div>
                             </div>
-
-
-                            <!-- delete Modal -->
-                            
-                            <div class="modal custom-modal fade" id="delete_project" role="dialog">
-                                <div class="modal-dialog modal-dialog-centered">
-                                  <div class="modal-content">
-                                    <div class="modal-body">
-                                      <div class="form-header">
-                                        <h3>Delete Project</h3>
-                                        <p>Are you sure want to delete?</p>
-                                      </div>
-                                      <div class="modal-btn delete-action">
-                                        <div class="row">
-                                          <div class="col-6">
-                                            <a href="/deleteproject/:<%=project._id%>" id="dltproject" class="btn btn-primary continue-btn">Delete</a>
-                                          </div>
-                                          <div class="col-6">
-                                            <a href=""  data-bs-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
 
                         <% }) %>
                     <% } %>
@@ -588,9 +564,9 @@
                                     <div class="form-group">
                                         <label>Priority</label>
                                         <select name="priority" class="select minput">
-                                            <option value="3" >High</option>
-                                            <option value="2" >Medium</option>
-                                            <option value="1" >Low</option>
+                                            <option value="Top" >High</option>
+                                            <option value="Medium" >Medium</option>
+                                            <option value="Low" >Low</option>
                                         </select>
                                     </div>
                                 </div>
@@ -630,7 +606,7 @@
 
         <!-- Delete project Modal  -->
 
-        <!-- <div class="modal custom-modal fade" id="delete_project" role="dialog">
+        <div class="modal custom-modal fade" id="delete_project" role="dialog">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
@@ -641,7 +617,7 @@
                   <div class="modal-btn delete-action">
                     <div class="row">
                       <div class="col-6">
-                        <a href="/deleteproject/:" id="dltproject" class="btn btn-primary continue-btn">Delete</a>
+                        <a href="" id="dltproject" class="btn btn-primary continue-btn">Delete</a>
                       </div>
                       <div class="col-6">
                         <a href=""  data-bs-dismiss="modal" class="btn btn-primary cancel-btn">Cancel</a>
@@ -651,7 +627,7 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
 
     </div>
 

@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
-mongodb = require('mongodb');
-const employeeSchema = new mongoose.Schema({
+const clientSchema = new mongoose.Schema({
     _id:{
         type:String,
         required:true
@@ -21,15 +20,6 @@ const employeeSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    pwd:{
-        type:String,
-        required:true
-    },
-    
-    jdate:{
-        type:Date,
-        required:true
-    },
     phone:{
         type:String,
         required:true
@@ -37,16 +27,7 @@ const employeeSchema = new mongoose.Schema({
     company:{
         type:String,
         required:true
-    },
-    designation:{
-        type:String,
-        required:true
-    },
-    department:{
-        type:String,
-        required:true
     }
 })
 
-module.exports = mongoose.model('Employee', employeeSchema);
-
+module.exports = mongoose.model('Client', clientSchema);

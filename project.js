@@ -28,8 +28,8 @@ const projectSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    team:{
-        type:[String],
+    team : { 
+        type : Array , default : [],
         required:true
     },
     pdescription:{
