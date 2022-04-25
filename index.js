@@ -16,8 +16,9 @@ let emp;
 let client;
 let empren;
 let id;
-mongoose
-  .connect("mongodb://localhost:27017/registrationUser", {
+
+
+mongoose.connect("mongodb://localhost:27017/registrationUser", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -32,6 +33,11 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/views/public"));
+
+app.listen(3000, () => {
+  console.log("Website running on port:3000");
+});
+
 
 app.get("/", (req, res) => {
   res.render("home");
@@ -59,7 +65,6 @@ app.get("/employee", async (req, res) => {
 });
 app.get("/clients", async (req, res) => {
   clientren = await Client.find();
-  // console.log(clientren);
   res.render("clients",{clientren});
 });
 app.get("/clientprofile", (req, res) => {
@@ -255,9 +260,6 @@ app.post("/editclient/:_id", async (req, res) => {
   res.redirect("/clients");
 });
 
-app.listen(3000, () => {
-  console.log("Website running on port:3000");
-});
 
 app.get("/deleteclient/:_id", (req, res) => {
   id = req.params._id.slice(1);
@@ -288,19 +290,12 @@ app.post("/deleteclient", async (req, res) => {
 });
 
 
-
-
-
 // nitya leaves
 
 
 
-
-
 app.get('/leaves', async (req, res) => {
-  // const { id } = req.params;
   const reqleaves = await Reqleave.find();
-  // console.log(reqleaves);
   res.render('leaves', { reqleaves })
 })
 
@@ -326,12 +321,6 @@ app.post('/leaves/:id', async(req, res) => {
   const reqleave = await Reqleave.findByIdAndUpdate(id, req.body, {runValidators: true});
   res.redirect(`/leaves/${reqleave._id}`)
 })
-
-// app.delete('/leaves/:id', async (req, res) => {
-//   const { id } = req.params;
-//   const deleteLeave = await Reqleave.findByIdAndDelete(id);
-//   res.redirect('/leaves');
-// })
 
 app.get("/deleteleaves/:_id", (req, res) => {
   id = req.params._id.slice(1);
@@ -411,7 +400,7 @@ app.get('/editproject/:pid', (req, res) => {
   });
 })
 app.post("/editproject/:pid", async (req, res) => {
-  const id = req.body.pid;
+  const id = req.params.pid.slice(1);
   const updateproject = await Project.findByIdAndUpdate(
     { _id: id },
     {
